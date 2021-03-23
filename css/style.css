@@ -15,20 +15,32 @@ html {
 }
 
 /* -- Header -- */
+header {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 header .logo {
-  margin: 20px;
   margin-top: 24px;
   font-family: 'Inconsolata', monospace;
   font-size: 2.4rem;
   line-height: 2.5rem;
   font-weight: bold;
-  letter-spacing: -0.08em;
+  letter-spacing: -0.12rem;
   text-transform: uppercase;
 }
 
 /* -- Main -- */
+main {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 figure {
-  margin: 44px;
+  margin-top: 64px;
 }
 
 img{
@@ -36,14 +48,10 @@ img{
   height: auto;
 }
 
-section {
-  margin: 20px;
-}
-
 section h1 {
   font-weight: bold;
-  font-size: 4.0rem;
-  line-height: 7.1rem;
+  font-size: 3.6rem;
+  line-height: 5.6rem;
   letter-spacing: -0.12rem;
   color: var(--grey1);
 }
@@ -75,6 +83,33 @@ section button {
 footer{
   margin: 20px;
   margin-bottom: 24px;
+  text-align: center;
   color: #BDBDBD;
 }
 
+/* Media queries Desktop*/
+@media screen and (min-width: 1024px) {
+  main {
+    flex-direction: row;
+  }
+
+  figure {
+    margin-right: 118px;
+  }
+
+  section {
+    margin-top: 64px;
+  }
+
+  section h1 {
+    font-size: 4.3rem;
+    line-height: 5.3rem;
+  }
+
+  section p {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+  
+
+}
